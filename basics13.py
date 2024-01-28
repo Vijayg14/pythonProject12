@@ -111,7 +111,40 @@ class Person:
   def __init__(self, name, age):
     self.name = name
     self.age = age
-
 p1 = Person("John", 36)
-
 print(p1.age)
+# object method_self()
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+  def myfunc(self):
+    print("Hello my name is " + self.name )
+p1 = Person("Jagadish", 36)
+p1.myfunc()
+# inheritance
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+  def printname(self):
+    print(self.firstname, self.lastname)
+#Use the Person class to create an object, and then execute the printname method:
+x = Person("ram", "temple")
+x.printname()
+# super func()
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+  # map()
+#def create_list(r1, r2):
+#	return list(map(lambda x: x, range(r1, r2+1)))
+#print(create_list(5, 9))
+#print(create_list(-1, 1))
+person1 = {
+  "name": "Jagadish",
+  "age": 26,
+  "country": "india"
+}
+# modules
+
